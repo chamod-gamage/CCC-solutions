@@ -114,12 +114,12 @@ for i in range(numRow):
                 print(CheckedCells[i][j])
             else:
                 print(-1)
-# for cell in EmptyCells:
-#     if CheckedCells[cell[0]][cell[1]] == 5646544:
-#         print(-1)
-#     else:
-#         print(CheckedCells[cell[0]][cell[1]])
-#
+for cell in EmptyCells:
+    if CheckedCells[cell[0]][cell[1]] == 5646544:
+        print(-1)
+    else:
+        print(CheckedCells[cell[0]][cell[1]])
+
 
 
 
