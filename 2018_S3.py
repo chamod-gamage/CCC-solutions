@@ -43,7 +43,7 @@ for cell in cameras:
             break
         
         ValidCells[y][i] = False
-    for i in range(x,-1-1):
+    for i in range(x,-1,-1):
         if MovementGrid[y][i] == 'W':
             break
         
