@@ -1,5 +1,5 @@
 import time
-import gspread
+# import gspread
 
 start = time.clock()
 N = int(input())
@@ -25,10 +25,13 @@ def balancer(weight):
 
 to_print = balancer(N)
 print(to_print)
-finish=time.clock()
-print(str(finish-start))
-file = open("treetimer.txt","a+")
-file.write("A tree of weight " + str(N) + " has " + str(to_print) + " possibilities and took " + str(finish-start) + " seconds to complete.\r\n" )
-file.write("\n")
-file.close()
+#########
+#DUE TO THE TIME TAKEN BY RECURSION, THIS WILL TAKE TOO LONG FOR MOST CASES WHERE N > 2000.
+##########
+#finish=time.clock()
+#print(str(finish-start))
+#file = open("treetimer.txt","a+")
+#file.write("A tree of weight " + str(N) + " has " + str(to_print) + " possibilities and took " + str(finish-start) + " seconds to complete.\r\n" )
+#file.write("\n")
+#file.close()
 
