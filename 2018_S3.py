@@ -22,7 +22,7 @@ for i in range(numRow):
             fy = i
         elif MovementGrid[i][j] == 'C':
             cameras.append([i,j])
-#print(Rows)
+
 
 for cell in cameras:
 
@@ -31,26 +31,22 @@ for cell in cameras:
     for i in range(y, numRow):
         if MovementGrid[i][x] == 'W':
             break
-        #elif MovementGrid[i][x] in ConDirections:
-            #continue
+        
         ValidCells[i][x] = False
     for i in range(y, -1,-1):
         if MovementGrid[i][x] == 'W':
             break
-        #elif MovementGrid[i][x] in ConDirections:
-            #continue
+       
         ValidCells[i][x] = False
     for i in range(x, numColumn):
         if MovementGrid[y][i] == 'W':
             break
-        #elif MovementGrid[i][x] in ConDirections:
-            #continue
+        
         ValidCells[y][i] = False
     for i in range(x,-1-1):
         if MovementGrid[y][i] == 'W':
             break
-        #elif MovementGrid[i][x] in ConDirections:
-            #continue
+        
         ValidCells[y][i] = False
 
 
@@ -106,14 +102,8 @@ if ValidCells[fy][fx] == True:
 # #print(fx)
 # #print(fy)
 # print(EmptyCells)
-#
-for i in range(numRow):
-    for j in range(numColumn):
-        if MovementGrid[i][j] == '.':
-            if CheckedCells[i][j] != 5646544:
-                print(CheckedCells[i][j])
-            else:
-                print(-1)
+
+
 for cell in EmptyCells:
     if CheckedCells[cell[0]][cell[1]] == 5646544:
         print(-1)
